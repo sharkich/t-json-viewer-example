@@ -89,6 +89,37 @@ const v2 = {
   }
 };
 
+const v3 = {'Type': 'Service',
+  'NuGetConfig': {
+    'SolutionFilePath': 'fn.sln',
+    'NugetProjectPath': null,
+    'AddDebugBuildJob': null,
+    'AddPreviewReleaseJob': null,
+    'UnitTestProjectPaths': null,
+    'Version': '1.4.3',
+    'NextBuildNumber': '343',
+    'RecipientList': null
+  },
+  'SFConfig': {
+    'SolutionFilePath': 'fn.sln',
+    'SfProjectPath': '/test/',
+    'ClusterTypes': ['STANDARD', 'AQL', 'SFDC'],
+    'UnitTestProjectPaths': null,
+    'Version': '1.4.3',
+    'NextBuildNumber': '343',
+    'RecipientList': null
+  },
+  'JavascriptConfig': {
+    'RootDirectoryPath': null,
+    'ArtifactoryDirectoryName': null,
+    'BuildFolder': null,
+    'Product': null,
+    'IsGulpPackaging': null,
+    'NextBuildNumber': '343',
+    'RecipientList': null
+  }
+};
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -98,6 +129,7 @@ export class AppComponent {
 
   v1 = v1;
   v2 = v2;
+  v3 = v3;
 
   config: any = v1;
 
