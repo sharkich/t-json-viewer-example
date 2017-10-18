@@ -131,9 +131,11 @@ export class AppComponent {
   v2 = v2;
   v3 = v3;
 
-  config: any = v1;
+  json: any = v1;
+  maxLength: number = 0;
 
-  changeConfig(v) {
-    this.config = v;
+  changeConfig(json, maxLength) {
+    this.json = json;
+    this.maxLength = maxLength;
   }
 }
